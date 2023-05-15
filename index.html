@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="contnet">
+      <div class="left-side">
+        <div class="steps">
+
+          <div class="number active">
+            <h1>1</h1>
+          </div>
+
+          <div class="text">
+            <p>Step 1</p>
+            <h1>Your info</h1>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="number">
+            <h1>2</h1>
+          </div>
+
+          <div class="text">
+            <p>Step 2</p>
+            <h1>Select plan</h1>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="number">
+            <h1>3</h1>
+          </div>
+
+          <div class="text">
+            <p>Step 3</p>
+            <h1>Add-ons</h1>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="number">
+            <h1>4</h1>
+          </div>
+
+          <div class="text">
+            <p>Step 4</p>
+            <h1>Summary</h1>
+          </div>
+
+        </div>
+      </div>
+      <div class="right-side">
+
+        <div class="container-right-side">
+
+
+          <!-- First Form -->
+          <div class="form-container active">
+            <h1>Personal info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
+
+            <div class="form">
+              <div class="information">
+                <label for="">Name:</label>
+                <input type="text" name="" id="" placeholder="e.g. Mohammed">
+              </div>
+
+              <div class="information">
+                <label for="">Email Address:</label>
+                <input type="text" name="" id="" placeholder="e.g. lx9zi@outlook.com">
+              </div>
+
+              <div class="information">
+                <label for="">Phone Number:</label>
+                <input type="number" name="" id="" placeholder="e.g. +966555555555">
+              </div>
+              <div class="btn-container">
+                <button class="next-btn">Next Step</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Second Form -->
+          <div class="form-container second ">
+            <h1>Select Your Plane</h1>
+            <p>You have the option of monthly or yearly billing.</p>
+
+            <div class="form">
+              <div class="card-container">
+
+                <div class="card">
+                  <img src="./assets/images/icon-arcade.svg" alt="">
+                  <h1 product-name>Arcade</h1>
+                  <p class="price arcade" product-price>$9/mo</p>
+                  <p class="price" id="yearly-billing">2 month free</p>
+                </div>
+
+                <div class="card">
+                  <img src="./assets/images/icon-advanced.svg" alt="">
+                  <h1 product-name>Advanced</h1>
+                  <p class="price advanced" product-price>$12/mo</p>
+                  <p class="price" id="yearly-billing">2 month free</p>
+                </div>
+
+                <div class="card">
+                  <img src="./assets/images/icon-pro.svg" alt="">
+
+                  <h1 product-name>Pro</h1>
+                  <p class="price pro" product-price>$15/mo</p>
+                  <p class="price" id="yearly-billing">2 month free</p>
+                </div>
+
+
+              </div>
+              <div class="price-btn">
+                <h1 id="monthly">Monthly</h1>
+
+                <div class="circle-container">
+                  <div class="circle"></div>
+                </div>
+
+                <h1 id="yearly">Yearly</h1>
+              </div>
+
+              <div class="btn-container">
+                <button class="prev-btn">Go Back</button>
+                <button class="next-btn">Next Step</button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Third Form -->
+          <div class="form-container third ">
+            <h1>Pick add-ons</h1>
+            <p>Add-ons help enhance your gaming experience.</p>
+
+            <div class="form">
+
+              <div class="service-container">
+                <div class="service">
+                  <input type="checkbox">
+                  <div class="service-text">
+                    <h1 for="one">Online service</h1>
+                    <p>Access to multiplayer games</p>
+                  </div>
+                  <p id="online-service-billing">+$1/mo</p>
+                </div>
+
+
+                <div class="service-container">
+                  <div class="service" for="one">
+                    <input type="checkbox" name="one" id="one">
+                    <div class="service-text">
+                      <h1 for="one">Larger storage</h1>
+                      <p>Extra 1TB of cloud save</p>
+                    </div>
+                    <p id="larger-storage-billing">+$2/mo</p>
+                  </div>
+                </div>
+
+                <div class="service-container">
+                  <div class="service">
+                    <input type="checkbox" name="" id="">
+                    <div class="service-text">
+                      <h1>Customizable Profile</h1>
+                      <p>Custom theme on your profile</p>
+                    </div>
+                    <p id="customizable-profile-billing">+$2/mo</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="btn-container">
+                <button class="prev-btn">Go Back</button>
+                <button class="next-btn">Next Step</button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Forth Form -->
+          <div class="form-container forth ">
+            <div class="th">
+              <h1>Finishing up</h1>
+              <p>Double-check everything looks OK before confirming.
+              </p>
+
+              <div class="form forth">
+                <div class="invoice">
+
+
+
+                </div>
+
+                <div class="total">
+                  <p>Total per monath</p>
+                  <h1 id="total-price"></h1>
+                </div>
+              </div>
+
+              <div class="btn-container">
+                <button class="prev-btn">Go Back</button>
+                <button class="confirm">Confirm</button>
+              </div>
+            </div>
+
+            <div class="thanks">
+              <img src="./assets/images/icon-thank-you.svg" alt="">
+              <h1>Thank you!</h1>
+              <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need
+                support,please fell free to email us at support@loremgaming.com.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script src="script.js"></script>
+
+</html>
